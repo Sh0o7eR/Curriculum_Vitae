@@ -1,0 +1,438 @@
+/*----------------------------
+******************************
+Author: Manuel Midiri
+
+01 - General Setting
+02 - Header
+03 - Intestazione
+04 - About
+05 - Skill
+06 - Instruction
+07 - Footer
+
+******************************
+-----------------------------*/
+/*----------------------------
+      01  -  General Setting
+----------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+/*----------------------------
+      02  -  Header
+----------------------------*/
+header {
+  width: 100%;
+  height: 400px;
+  background-image: url("../img/header-img/road.jpg");
+  background-size: cover;
+  background-position: center;
+}
+header .header-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+header .header-bg h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+header .header-bg p {
+  font-weight: 300;
+  font-style: italic;
+}
+/*----------------------------
+      03  -  Intestazione
+----------------------------*/
+.intestazione {
+  margin-top: 20px;
+}
+.intestazione h1 {
+  font-weight: bold;
+  font-size: 34px;
+}
+/*----------------------------
+      04  -  About
+----------------------------*/
+.about {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.about .about-text {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.about .about-text .icon-about-1 {
+  width: 50px;
+  padding-top: 20px;
+}
+.about .about-text .icon-about-2 {
+  width: 40px;
+  padding-top: 20px;
+}
+.about .about-text hr {
+  width: 50px;
+  border-top: 2px solid rgba(28, 28, 28, 0.7);
+}
+.about .about-text p {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  line-height: 24px;
+  color: rgba(16, 16, 16, 0.65);
+}
+.about .about-text h2 {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(16, 16, 16, 0.65);
+}
+.m-card-profilo {
+  margin: 0 auto;
+  height: 530px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 0;
+}
+.m-card-profilo .filter-white {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+}
+.m-card-profilo .filter-white .line-border-top {
+  position: absolute;
+  display: flex;
+  top: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.m-card-profilo .filter-white .line-border-top .line {
+  margin-right: -3px;
+  height: 2px;
+  width: 12px;
+  background-color: rgba(28, 28, 28, 0.8);
+  transform: rotate(-45deg);
+}
+.m-card-profilo .filter-white .line-border-bottom {
+  position: absolute;
+  display: flex;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.m-card-profilo .filter-white .line-border-bottom .line {
+  margin-right: -3px;
+  height: 2px;
+  width: 12px;
+  background-color: rgba(28, 28, 28, 0.8);
+  transform: rotate(-45deg);
+}
+.m-card-profilo .img-circle {
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+}
+.m-card-profilo .img-circle img {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+.m-card-profilo .text-card {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  padding: 40px;
+}
+.m-card-profilo .text-card hr {
+  width: 50px;
+  border-top: 1px solid rgba(28, 28, 28, 0.8);
+  margin: 40px 0 30px;
+}
+.m-card-profilo .text-card p {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(16, 16, 16, 0.9);
+  line-height: 14px;
+  letter-spacing: 1.5px;
+}
+.m-card-profilo .text-card .social a {
+  color: #1c1c1c;
+  transition: all 0.2s ease-in-out;
+}
+.m-card-profilo .text-card .social a i {
+  font-size: 24px;
+}
+.m-card-profilo .text-card .social a:hover {
+  color: #388131;
+  transform: scale(1.1);
+}
+/*----------------------------
+        05  -  Skill
+----------------------------*/
+.header-skill {
+  padding: 15px;
+}
+.header-skill img {
+  width: 45px;
+}
+.header-skill hr {
+  width: 50px;
+  border-top: 2px solid rgba(28, 28, 28, 0.7);
+}
+.header-skill h2 {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-family: 'Montserrat', sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(16, 16, 16, 0.65);
+}
+.text-card-skill {
+  height: 360px;
+}
+.text-card-skill #carouselSkill {
+  width: 100%;
+  height: 100%;
+}
+.text-card-skill #carouselSkill .carousel-indicators li {
+  background-color: rgba(16, 16, 16, 0.65);
+}
+.text-card-skill .carousel-caption {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  padding: 40px;
+  color: rgba(16, 16, 16, 0.65);
+}
+.text-card-skill .carousel-caption p {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+.text-card-skill .carousel-caption h5 {
+  text-align: right;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(16, 16, 16, 0.9);
+}
+.text-card-skill .carousel-caption ul {
+  list-style: none;
+}
+.text-card-skill .carousel-caption .line-1 {
+  width: 100%;
+  height: 4px;
+  background-color: #ccc;
+}
+.text-card-skill .carousel-caption .line-1 .line-bg {
+  width: 95%;
+  height: 100%;
+  background-color: #545454;
+}
+.text-card-skill .carousel-caption .line-3 {
+  width: 100%;
+  height: 4px;
+  background-color: #ccc;
+}
+.text-card-skill .carousel-caption .line-3 .line-bg {
+  width: 60%;
+  height: 100%;
+  background-color: #545454;
+}
+.text-card-skill .carousel-caption .line-4 {
+  width: 100%;
+  height: 4px;
+  background-color: #ccc;
+}
+.text-card-skill .carousel-caption .line-4 .line-bg {
+  width: 50%;
+  height: 100%;
+  background-color: #545454;
+}
+.text-card-skill .carousel-caption .line-05 {
+  width: 100%;
+  height: 4px;
+  background-color: #ccc;
+}
+.text-card-skill .carousel-caption .line-05 .line-bg {
+  width: 70%;
+  height: 100%;
+  background-color: #545454;
+}
+.text-card-skill .carousel-caption .line-5 {
+  width: 100%;
+  height: 4px;
+  background-color: #ccc;
+}
+.text-card-skill .carousel-caption .line-5 .line-bg {
+  width: 50%;
+  height: 100%;
+  background-color: #545454;
+}
+.text-card-skill .carousel-caption .line-6 {
+  width: 100%;
+  height: 4px;
+  background-color: #ccc;
+}
+.text-card-skill .carousel-caption .line-6 .line-bg {
+  width: 75%;
+  height: 100%;
+  background-color: #545454;
+}
+.text-card-skill .carousel-caption .line-7 {
+  width: 100%;
+  height: 4px;
+  background-color: #ccc;
+}
+.text-card-skill .carousel-caption .line-7 .line-bg {
+  width: 45%;
+  height: 100%;
+  background-color: #545454;
+}
+.text-card-skill .carousel-caption .line-8 {
+  width: 100%;
+  height: 4px;
+  background-color: #ccc;
+}
+.text-card-skill .carousel-caption .line-8 .line-bg {
+  width: 80%;
+  height: 100%;
+  background-color: #545454;
+}
+.text-card-skill .carousel-caption .line-9 {
+  width: 100%;
+  height: 4px;
+  background-color: #ccc;
+}
+.text-card-skill .carousel-caption .line-9 .line-bg {
+  width: 95%;
+  height: 100%;
+  background-color: #545454;
+}
+.text-card-skill .carousel-caption .line-10 {
+  width: 100%;
+  height: 4px;
+  background-color: #ccc;
+}
+.text-card-skill .carousel-caption .line-10 .line-bg {
+  width: 60%;
+  height: 100%;
+  background-color: #545454;
+}
+.text-card-skill .carousel-caption .line-11 {
+  width: 100%;
+  height: 4px;
+  background-color: #ccc;
+}
+.text-card-skill .carousel-caption .line-11 .line-bg {
+  width: 80%;
+  height: 100%;
+  background-color: #545454;
+}
+/*----------------------------
+       06  -  Instruction
+----------------------------*/
+.edu-text {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 15px;
+}
+.edu-text .edu-img img {
+  width: 50px;
+}
+.edu-text .edu-img hr {
+  width: 50px;
+  border-top: 2px solid rgba(28, 28, 28, 0.7);
+}
+.edu-text .edu-img h2 {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(16, 16, 16, 0.65);
+}
+.edu-text ul {
+  list-style: none;
+}
+.edu-text .text-li-edu p {
+  font-size: 11px;
+  margin-left: 33px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.edu-text .text-li-edu .li-edu-img h3 {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: rgba(16, 16, 16, 0.9);
+}
+/*----------------------------
+       07  -  Footer
+----------------------------*/
+footer {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.6);
+}
+footer .filter-white {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+}
+footer .filter-white .line-border-top {
+  position: absolute;
+  display: flex;
+  top: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer .filter-white .line-border-top .line {
+  margin-right: -3px;
+  height: 2px;
+  width: 12px;
+  background-color: rgba(28, 28, 28, 0.8);
+  transform: rotate(-45deg);
+}
+footer .text-footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+footer .text-footer p {
+  color: rgba(16, 16, 16, 0.9);
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+footer .text-footer .social {
+  margin-left: 20px;
+}
+footer .text-footer .social a {
+  color: #1c1c1c;
+  transition: all 0.2s ease-in-out;
+}
+footer .text-footer .social a i {
+  font-size: 24px;
+}
+footer .text-footer .social a:hover {
+  color: #388131;
+  transform: scale(1.1);
+}
+/*# sourceMappingURL=styles.css.map */

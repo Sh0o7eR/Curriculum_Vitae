@@ -1,0 +1,462 @@
+
+/*----------------------------
+******************************
+Author: Manuel Midiri
+
+01 - General Setting
+02 - Header
+03 - Intestazione
+04 - About
+05 - Skill
+06 - Instruction
+07 - Footer
+
+******************************
+-----------------------------*/
+
+
+
+/*----------------------------
+      01  -  General Setting
+----------------------------*/
+//Variabili less
+@border-card: 1px solid rgba(0,0,0,.6);
+@border-foto: 2px solid rgba(0,0,0,.7);
+@color: rgba(16,16,16,.9);
+@color-text-about: rgba(16,16,16,.65);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+/*----------------------------
+      02  -  Header
+----------------------------*/
+header{
+  width: 100%;
+  height: 400px;
+  background-image: url("../img/header-img/road.jpg");
+  background-size: cover;
+  background-position: center;
+  .header-bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    h1{
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    p{
+      font-weight: 300;
+      font-style: italic;
+    }
+  }
+}
+/*----------------------------
+      03  -  Intestazione
+----------------------------*/
+.intestazione{
+  margin-top: 20px;
+  h1{
+    font-weight: bold;
+    font-size: 34px;
+  }
+}
+/*----------------------------
+      04  -  About
+----------------------------*/
+.about{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  .about-text{
+    border: @border-card;
+    .icon-about-1{
+      width: 50px;
+      padding-top: 20px;
+    }
+    .icon-about-2{
+      width: 40px;
+      padding-top: 20px;
+    }
+    hr{
+      width: 50px;
+      border-top: 2px solid rgba(28,28,28,.7);
+      //margin: 40px 0 30px;
+    }
+    p{
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      line-height: 24px;
+      color: @color-text-about;
+    }
+    h2{
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-family: 'Montserrat', sans-serif;
+      color: transparent;
+      -webkit-text-stroke: 1px @color-text-about;
+    }
+  }
+}
+.m-card-profilo{
+  margin: 0 auto;
+  height: 530px;
+  border: @border-card;
+  padding: 0;
+  .filter-white{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.9);
+    position: relative;
+    .line-border-top{
+      position: absolute;
+      display: flex;
+      top: -1px;
+      left: 50%;
+      transform: translateX(-50%);
+      .line{
+        margin-right: -3px;
+        height: 2px;
+        width: 12px;
+        background-color: rgba(28,28,28,.8);
+        transform: rotate(-45deg);
+      }
+    }
+    .line-border-bottom{
+      position: absolute;
+      display: flex;
+      bottom: -2px;
+      left: 50%;
+      transform: translateX(-50%);
+      .line{
+        margin-right: -3px;
+        height: 2px;
+        width: 12px;
+        background-color: rgba(28,28,28,.8);
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  .img-circle{
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    img{
+      width: 100%;
+      border: @border-foto;
+      border-radius: 50%;
+      box-shadow: 2px 2px 5px rgba(0,0,0,.6);
+    }
+  }
+  .text-card{
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    padding: 40px;
+    hr{
+      width: 50px;
+      border-top: 1px solid rgba(28,28,28,.8);
+      margin: 40px 0 30px;
+    }
+    p{
+      font-size: 14px;
+      font-weight: bold;
+      color: @color;
+      line-height: 14px;
+      letter-spacing: 1.5px;
+    }
+    .social{
+      a{
+        color: #1c1c1c;
+        transition: all 0.2s ease-in-out;
+
+        i{
+          font-size: 24px;
+        }
+        &:hover{
+          color: #388131;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+/*----------------------------
+        05  -  Skill
+----------------------------*/
+  .header-skill{
+    padding: 15px;
+    img{
+      width: 45px;
+    }
+    hr{
+      width: 50px;
+      border-top: 2px solid rgba(28,28,28,.7);
+    }
+    h2{
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      font-family: 'Montserrat', sans-serif;
+      color: transparent;
+      -webkit-text-stroke: 1px @color-text-about;
+    }
+  }
+.text-card-skill{
+    height: 360px;
+  #carouselSkill{
+    width: 100%;
+    height: 100%;
+    .carousel-indicators{
+      li{
+        background-color: @color-text-about;
+      }
+    }
+  }
+  .carousel-caption{
+      position: relative;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      padding: 40px;
+      color: @color-text-about;
+    p{
+      font-size: 14px;
+      letter-spacing: 1.5px;
+    }
+    h5{
+      text-align: right;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: @color;
+    }
+    ul{
+      list-style: none;
+    }
+    .line-1{
+      width: 100%;
+      height: 4px;
+      background-color: #ccc;
+      .line-bg{
+        width: 95%;
+        height: 100%;
+        background-color: #545454;
+      }
+    }
+    .line-3{
+      width: 100%;
+      height: 4px;
+      background-color: #ccc;
+      .line-bg{
+        width: 60%;
+        height: 100%;
+        background-color: #545454;
+      }
+    }
+    .line-4{
+      width: 100%;
+      height: 4px;
+      background-color: #ccc;
+      .line-bg{
+        width: 50%;
+        height: 100%;
+        background-color: #545454;
+      }
+    }
+    .line-05{
+      width: 100%;
+      height: 4px;
+      background-color: #ccc;
+      .line-bg{
+        width: 70%;
+        height: 100%;
+        background-color: #545454;
+      }
+    }
+    .line-5{
+      width: 100%;
+      height: 4px;
+      background-color: #ccc;
+      .line-bg{
+        width: 50%;
+        height: 100%;
+        background-color: #545454;
+      }
+    }
+    .line-6{
+      width: 100%;
+      height: 4px;
+      background-color: #ccc;
+      .line-bg{
+        width: 75%;
+        height: 100%;
+        background-color: #545454;
+      }
+    }
+    .line-7{
+      width: 100%;
+      height: 4px;
+      background-color: #ccc;
+      .line-bg{
+        width: 45%;
+        height: 100%;
+        background-color: #545454;
+      }
+    }
+    .line-8{
+      width: 100%;
+      height: 4px;
+      background-color: #ccc;
+      .line-bg{
+        width: 80%;
+        height: 100%;
+        background-color: #545454;
+      }
+    }
+    .line-9{
+      width: 100%;
+      height: 4px;
+      background-color: #ccc;
+      .line-bg{
+        width: 95%;
+        height: 100%;
+        background-color: #545454;
+      }
+    }
+    .line-10{
+      width: 100%;
+      height: 4px;
+      background-color: #ccc;
+      .line-bg{
+        width: 60%;
+        height: 100%;
+        background-color: #545454;
+      }
+    }
+    .line-11{
+      width: 100%;
+      height: 4px;
+      background-color: #ccc;
+      .line-bg{
+        width: 80%;
+        height: 100%;
+        background-color: #545454;
+      }
+    }
+  }
+ }
+/*----------------------------
+       06  -  Instruction
+----------------------------*/
+.edu-text{
+  border: @border-card;
+  padding: 15px;
+  .edu-img {
+    img{
+      width: 50px;
+    }
+    hr{
+      width: 50px;
+      border-top: 2px solid rgba(28,28,28,.7);
+    }
+    h2{
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-family: 'Montserrat', sans-serif;
+      color: transparent;
+      -webkit-text-stroke: 1px @color-text-about;
+    }
+  }
+  ul{
+    list-style: none;
+  }
+  .text-li-edu{
+    p{
+      font-size: 11px;
+      margin-left: 33px;
+      letter-spacing: 1px;
+      font-weight: 300;
+    }
+    .li-edu-img{
+      h3{
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: @color;
+      }
+    }
+  }
+}
+/*----------------------------
+       07  -  Footer
+----------------------------*/
+footer{
+  width: 100%;
+  border-top: @border-card;
+  .filter-white {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.9);
+    position: relative;
+
+    .line-border-top {
+      position: absolute;
+      display: flex;
+      top: -1px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .line {
+        margin-right: -3px;
+        height: 2px;
+        width: 12px;
+        background-color: rgba(28, 28, 28, .8);
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  .text-footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Montserrat', sans-serif;
+    p{
+      color: @color;
+      letter-spacing: 1.5px;
+      font-weight: bold;
+    }
+    .social{
+      margin-left: 20px;
+      a{
+        color: #1c1c1c;
+        transition: all 0.2s ease-in-out;
+        i{
+          font-size: 24px;
+        }
+        &:hover{
+          color: #388131;
+          transform: scale(1.1);
+        }
+      }
+    }
+
+  }
+}
